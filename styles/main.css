@@ -1,0 +1,137 @@
+
+body {
+    margin:0;
+    padding: 8px 4px 12px 4px;
+    color: white;
+    background-color: #121215;
+    height: 100vh;
+    /*position: relative;*/
+
+}
+img {
+	width:200px;
+	height:200px;
+	position:absolute;
+    margin-left: 18px;
+
+	/*margin-top: 30px;*/
+}
+.moon{
+	position: relative;
+	margin-left: 18px;
+	margin-top: 100px;
+}
+.sun{
+	position: relative;
+	margin-top: 100px;
+	margin-left: 18px;
+}
+
+#container {
+	height: 50%;
+}
+#container2 {
+	height: 50%;
+}
+#MyClockDisplay {
+  box-sizing: content-box;  
+  width: 300px;
+  height: 100px;
+  padding: 30px;  
+  color:black;
+  background-color: white;
+  border-radius: 3px;
+  font-family: Century Gothic;
+  font-size: 50px;
+  margin-top:-3%;
+  margin-left:0%;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 60px;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Arial;
+    letter-spacing: 7px;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: gray;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #C0C0C0}
+
+.button:active {
+  background-color: #C0C0C0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  margin-bottom: 10px;
+}
+/* Global styles come from external css https://codepen.io/GreenSock/pen/JGaKdQ*/
+
+/*.box {
+  position:absolute;    
+  left:-100px;
+  opacity:0;
+  width: 200px;
+  height: 200px;
+}*/
+.box {
+  display:block;
+}
+
+
+
+/*Ipad versie*/
+@media only screen and (min-width: 601px){
+  	.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Arial;
+    letter-spacing: 7px;
+	}
+	.moon{
+	margin-left: 62px;
+	}
+	.sun{
+	margin-left: 62px;
+	}
+
+}
+  	  /*Laptop versie*/
+@media only screen and (min-width: 1025px){
+  
+	img {
+	width:270px;
+	height:270px;
+	position:absolute;
+	
+	/*margin-top: 30px;*/
+	}
+	.moon{
+	margin-top: 134px;
+	margin-left: 297px;
+	}
+	.sun{
+	margin-top: 50px;
+	margin-left: 297px;
+	}
+}
